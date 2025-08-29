@@ -1,0 +1,157 @@
+<!-- 404.html (updated) -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>404 — Page Not Found | Munna Coded</title>
+  <meta name="description" content="The page you’re looking for doesn’t exist or has been moved. Explore other sections of the site." />
+  <meta name="robots" content="noindex, nofollow" />
+  <meta name="theme-color" content="#0d0d1a" />
+  <meta name="author" content="Munna Coded" />
+
+  <!-- Canonical (optional for 404) -->
+  <link rel="canonical" href="https://munnacoded.netlify.app/404.html" />
+
+  <!-- Open Graph (basic) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Munna Coded — Portfolio" />
+  <meta property="og:title" content="404 — Page Not Found" />
+  <meta property="og:description" content="The page you’re looking for doesn’t exist or has been moved. Explore other sections of the site." />
+  <meta property="og:url" content="https://munnacoded.netlify.app/404.html" />
+  <meta property="og:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+  <meta property="og:image:alt" content="Portrait of Munna Coded" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0d0d1a" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/pages.css" />
+
+  <!-- JS -->
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/include-partials.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- HUD gate + avatar preload + preloader (single drop-in) -->
+  <style id="hud-gate-css">
+    /* Dark fallback to avoid white flash */
+    html.hud-gate, html.hud-gate body { background:#040b12; }
+    html.hud-gate body { overflow:hidden; }
+    /* Hide everything while gate is ON */
+    html.hud-gate body > * { visibility:hidden !important; }
+    /* But show the HUD immediately */
+    html.hud-gate body > #hud-preloader { visibility:visible !important; }
+  </style>
+  <script>
+    (function(){
+      try {
+        // Gate only on first visit in this tab
+        if (!sessionStorage.getItem('hudShown')) {
+          document.documentElement.classList.add('hud-gate');
+          // Failsafe: auto-open gate in case JS/preloader is delayed
+          setTimeout(function(){
+            try{
+              document.documentElement.classList.remove('hud-gate');
+              var s = document.getElementById('hud-gate-css');
+              if (s && s.parentNode) s.parentNode.removeChild(s);
+            }catch(_){}
+          }, 3500);
+        } else {
+          document.documentElement.classList.remove('hud-gate');
+        }
+      } catch(_) {}
+    })();
+  </script>
+  
+  <!-- Preload HUD avatar for instant display -->
+  <link rel="preload" as="image" href="/assets/img/avatar/munna-avatar.webp" fetchpriority="high">
+  
+  <!-- Preloader (cache-busted) -->
+  <script src="/assets/js/preloader.js?v=2" defer></script>
+  
+</head>
+
+<body class="dark-mode">
+  <!-- Header -->
+  <div data-include="/partials/header.html"></div>
+
+  <main id="page-content">
+    <!-- Unified non-home hero style -->
+    <section id="nf-hero" class="testimonials-hero-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="page-title glitch" data-text="404_Not_Found">// 404_Not_Found</h1>
+          <p class="section-subtitle">
+            The page you’re looking for doesn’t exist or may have been moved. Use the links below to explore other sections.
+          </p>
+        </div>
+
+        <div class="about-cta-buttons" style="display:flex; gap:12px; justify-content:center; flex-wrap:wrap;">
+          <a href="/" class="cta-button primary-cta">
+            <i class="fas fa-home"></i> Back_Home
+          </a>
+          <a href="/projects" class="cta-button secondary-cta">
+            <i class="fas fa-layer-group"></i> View_Projects
+          </a>
+          <a href="/contact" class="cta-button secondary-cta">
+            <i class="fas fa-paper-plane"></i> Contact_Me
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick links section -->
+    <section class="all-skills-section section-padding-sm" aria-labelledby="quick-links">
+      <div class="container">
+        <h2 id="quick-links" class="section-title glitch" data-text="Quick_Links">// Quick_Links</h2>
+        <div class="skills-listing-grid">
+          <a class="skill-item-card" href="/about" style="text-decoration:none;">
+            <div class="skill-item-header">
+              <i class="fas fa-user-astronaut skill-item-icon"></i>
+              <h3 class="skill-item-name">About</h3>
+            </div>
+            <p class="skill-item-description">Learn about me, my philosophy and approach.</p>
+          </a>
+          <a class="skill-item-card" href="/projects" style="text-decoration:none;">
+            <div class="skill-item-header">
+              <i class="fas fa-code skill-item-icon"></i>
+              <h3 class="skill-item-name">Projects</h3>
+            </div>
+            <p class="skill-item-description">Explore case studies and live demos.</p>
+          </a>
+          <a class="skill-item-card" href="/skills" style="text-decoration:none;">
+            <div class="skill-item-header">
+              <i class="fas fa-toolbox skill-item-icon"></i>
+              <h3 class="skill-item-name">Skills</h3>
+            </div>
+            <p class="skill-item-description">Core technologies, tools and methods I use.</p>
+          </a>
+          <a class="skill-item-card" href="/testimonials" style="text-decoration:none;">
+            <div class="skill-item-header">
+              <i class="fas fa-comments skill-item-icon"></i>
+              <h3 class="skill-item-name">Testimonials</h3>
+            </div>
+            <p class="skill-item-description">What clients and collaborators say.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/partials/footer.html"></div>
+</body>
+</html>

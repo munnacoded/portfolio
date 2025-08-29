@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Munna Coded — Front-End Web Developer & Designer</title>
+  <meta name="description" content="Front-End Web Developer & Designer crafting fast, accessible and modern web experiences. Explore projects, skills, and testimonials — contact for collaboration." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d0d1a" />
+  <meta name="author" content="Munna Coded" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://munnacoded.netlify.app/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:site_name" content="Munna Coded — Portfolio" />
+  <meta property="og:title" content="Munna Coded — Front-End Web Developer & Designer" />
+  <meta property="og:description" content="Front-End Web Developer & Designer crafting fast, accessible and modern web experiences. Explore projects, skills, and testimonials — contact for collaboration." />
+  <meta property="og:url" content="https://munnacoded.netlify.app/" />
+  <meta property="og:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+  <meta property="og:image:alt" content="Portrait of Munna Coded" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Munna Coded — Front-End Web Developer & Designer" />
+  <meta name="twitter:description" content="Front-End Web Developer & Designer crafting fast, accessible and modern web experiences." />
+  <meta name="twitter:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0d0d1a" />
+
+  <!-- CSS (theme tokens first) -->
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/pages.css" />
+
+  <!-- Core JS -->
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/include-partials.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- Structured Data: Person -->
+  <!-- NOTE: Replace USERNAME placeholders in sameAs with your real handles later. -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Person",
+    "name":"Munna Coded",
+    "alternateName": ["Mohiuddin Munna", "মোহিউদ্দিন মুন্না"],
+    "image":"https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg",
+    "url":"https://munnacoded.netlify.app/",
+    "email":"mailto:munnacoded@gmail.com",
+    "jobTitle":"Front-End Web Developer & Designer",
+    "worksFor":{"@type":"Organization","name":"Independent"},
+    "sameAs":[
+      "https://github.com/USERNAME",
+      "https://www.linkedin.com/in/USERNAME",
+      "https://twitter.com/USERNAME",
+      "https://dribbble.com/USERNAME"
+    ],
+    "address":{"@type":"PostalAddress","addressCountry":"BD"}
+  }
+  </script>
+
+  <!-- Structured Data: WebSite + SearchAction -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Munna Coded — Front-End Web Developer",
+    "url":"https://munnacoded.netlify.app/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://munnacoded.netlify.app/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumbs (Home) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://munnacoded.netlify.app/"}
+    ]
+  }
+  </script>
+    
+  <!-- HUD gate + avatar preload + preloader (single drop-in) -->
+  <style id="hud-gate-css">
+    /* Dark fallback to avoid white flash */
+    html.hud-gate, html.hud-gate body { background:#040b12; }
+    html.hud-gate body { overflow:hidden; }
+    /* Hide everything while gate is ON */
+    html.hud-gate body > * { visibility:hidden !important; }
+    /* But show the HUD immediately */
+    html.hud-gate body > #hud-preloader { visibility:visible !important; }
+  </style>
+  <script>
+    (function(){
+      try {
+        // Gate only on first visit in this tab
+        if (!sessionStorage.getItem('hudShown')) {
+          document.documentElement.classList.add('hud-gate');
+          // Failsafe: auto-open gate in case JS/preloader is delayed
+          setTimeout(function(){
+            try{
+              document.documentElement.classList.remove('hud-gate');
+              var s = document.getElementById('hud-gate-css');
+              if (s && s.parentNode) s.parentNode.removeChild(s);
+            }catch(_){}
+          }, 3500);
+        } else {
+          document.documentElement.classList.remove('hud-gate');
+        }
+      } catch(_) {}
+    })();
+  </script>
+  
+  <!-- Preload HUD avatar for instant display -->
+  <link rel="preload" as="image" href="/assets/img/avatar/munna-avatar.webp" fetchpriority="high">
+  
+  <!-- Preloader (cache-busted) -->
+  <script src="/assets/js/preloader.js?v=2" defer></script>
+  
+</head>
+
+<body class="dark-mode">
+  <!-- Header (included) -->
+  <div data-include="/partials/header.html"></div>
+
+  <main id="page-content">
+    <!-- Hero -->
+    <section id="hero" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-text-content">
+          <h1 class="hero-headline">
+            <span class="greeting-line">&gt; Hello, I'm</span>
+            <span class="name-line glitch" data-text="Munna Coded">Munna Coded</span>
+          </h1>
+          <div class="hero-subtitle-wrapper">
+            <p class="hero-subtitle">I'm a <span id="role-typer" class="role-typer-text"></span><span class="cursor"></span></p>
+          </div>
+          <p class="hero-intro">
+            Crafting digital experiences with a fusion of cutting-edge technology and creative design. I transform complex problems into intuitive and engaging web solutions.
+          </p>
+          <div class="hero-cta-buttons">
+            <a href="/projects" class="cta-button primary-cta">
+              <i class="fas fa-terminal"></i> View Projects_
+            </a>
+            <a href="/contact" class="cta-button secondary-cta">
+              <i class="fas fa-link"></i> Get In Touch_
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual-area">
+          <div class="visual-placeholder" aria-hidden="true">
+<pre class="ascii-art">
+  ____   ____    ___    ____    ____    _    _   _
+ |  _ \ |  _ \  / _ \  / ___|  / ___|  / \  | \ | |
+ | |_) || |_) || | | || |  _  | |  _  / _ \ |  \| |
+ |  __/ |  _ < | |_| || |_| | | |_| |/ ___ \| |\  |
+ |_|    |_| \_\ \___/  \____|  \____|\_/   \_\| \_|
+</pre>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-down-indicator">
+        <a href="#featured-projects" aria-label="Scroll to featured projects">
+          <i class="fas fa-chevron-down"></i>
+          <span>Scroll</span>
+        </a>
+      </div>
+      <div class="background-glitch-overlay" aria-hidden="true"></div>
+    </section>
+
+    <!-- Featured Projects -->
+    <section id="featured-projects" class="featured-projects-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title glitch" data-text="Featured_Projects">// Featured_Projects</h2>
+          <p class="section-subtitle">A glimpse into my recent work and capabilities. Each project is a testament to dedication and skill.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project Card 1 -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img
+                src="/assets/img/projects/alokchhaya-high-school/cover.webp"
+                alt="Alokchhaya High School website thumbnail"
+                class="project-thumbnail"
+                loading="lazy"
+                width="800" height="450"
+              />
+              <div class="project-overlay">
+                <a href="/projects#project-slug-1" class="overlay-button">
+                  <i class="fas fa-eye"></i> View Details_
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                <a href="/projects#project-slug-1">Alokchhaya High School — Responsive Informational Website</a>
+              </h3>
+              <p class="project-description">
+                Designed and developed a responsive multi-section website for a school, showcasing mission, programs and activities with a clean, user-friendly interface.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 2 (placeholder image) -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img
+                src="/assets/img/misc/Portfolio_Screenshot.png"
+                alt="Cyber Dashboard project thumbnail"
+                class="project-thumbnail"
+                loading="lazy"
+                width="800" height="450"
+              />
+              <div class="project-overlay">
+                <a href="/projects#project-slug-2" class="overlay-button">
+                  <i class="fas fa-eye"></i> View Details_
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title"><a href="/projects#project-slug-2">Cyber_Dashboard // Data Visualization</a></h3>
+              <p class="project-description">
+                Interactive dashboard for visualizing complex datasets with real-time updates and customizable widgets.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">D3.js</span>
+                <span class="tag">Firebase</span>
+                <span class="tag">SCSS</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Card 3 (placeholder image) -->
+          <div class="project-card">
+            <div class="project-image-wrapper">
+              <img
+                src="/assets/img/misc/Portfolio_Screenshot.png"
+                alt="Portfolio Matrix project thumbnail"
+                class="project-thumbnail"
+                loading="lazy"
+                width="800" height="450"
+              />
+              <div class="project-overlay">
+                <a href="/projects#project-slug-3" class="overlay-button">
+                  <i class="fas fa-eye"></i> View Details_
+                </a>
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title"><a href="/projects#project-slug-3">Portfolio_Matrix // Personal Website</a></h3>
+              <p class="project-description">
+                A dynamic personal portfolio with a cyberpunk aesthetic and smooth micro-interactions.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">GSAP</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-projects-cta">
+          <a href="/projects" class="cta-button primary-cta">
+            <i class="fas fa-layer-group"></i> Explore All Projects_
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Mini About -->
+    <section id="mini-about" class="mini-about-section section-padding">
+      <div class="container mini-about-container">
+        <div class="mini-about-visual">
+          <img
+            src="/assets/img/avatar/Mohiuddin-Munna.jpeg"
+            alt="Munna Coded — Front-End Web Developer"
+            class="profile-photo"
+            loading="lazy"
+            width="600" height="600"
+          />
+        </div>
+        <div class="mini-about-content">
+          <h2 class="section-title glitch" data-text="Who_Am_I?">// Who_Am_I?</h2>
+          <p class="about-greeting">Initiating connection... My designation: <strong class="highlight-name">Munna Coded</strong>.</p>
+          <p class="about-core-statement">
+            I am a passionate <strong class="highlight">Front-End Web Developer</strong> with a knack for crafting immersive and user-centric digital experiences. I thrive on transforming complex ideas into elegant, functional solutions.
+          </p>
+          <p class="about-mission">
+            My mission is to bridge human needs and digital possibilities—building interfaces that are fast, accessible, and a joy to use.
+          </p>
+          <div class="about-cta">
+            <a href="/about" class="cta-button secondary-cta">
+              <i class="fas fa-user-astronaut"></i> Full Bio_
+            </a>
+            <!-- TODO: Update resume if file name/path changes -->
+            <a href="/assets/docs/resume.pdf" class="cta-button primary-cta download-resume-btn" aria-label="Download Resume" download="Munna-Coded-CV.pdf">
+              <i class="fas fa-file-download"></i> Download CV_
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Core Skills Overview -->
+    <section id="core-skills" class="core-skills-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title glitch" data-text="Core_Arsenal">// Core_Arsenal</h2>
+          <p class="section-subtitle">Primary technologies and methods I use to build high-performance, engaging web experiences.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-name">Front-End Development_</h3>
+            <p class="skill-description">Responsive, accessible UIs using HTML5, CSS3, JavaScript (ES6+), and modern stacks.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-drafting-compass"></i></div>
+            <h3 class="skill-name">UI/UX Principles_</h3>
+            <p class="skill-description">User-centered design, clear hierarchy, and consistent patterns for intuitive experiences.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-mobile-alt"></i></div>
+            <h3 class="skill-name">Responsive Design_</h3>
+            <p class="skill-description">Mobile-first layouts, flexible grids, fluid media, and device-aware optimizations.</p>
+          </div>
+
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="skill-name">API Integration_</h3>
+            <p class="skill-description">REST/GraphQL integrations for dynamic content and scalable data flows.</p>
+          </div>
+        </div>
+
+        <div class="view-all-skills-cta">
+          <a href="/skills" class="cta-button secondary-cta">
+            <i class="fas fa-brain"></i> Full Skillset_
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials snapshot -->
+    <section id="testimonials" class="testimonials-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title glitch" data-text="Client_Signals">// Client_Signals</h2>
+          <p class="section-subtitle">Valuable feedback from those I've had the pleasure to collaborate with.</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "Working with Munna Coded was an absolute pleasure. Technical expertise and attention to detail—delivered beyond expectations!"
+            </p>
+            <div class="testimonial-author">
+              <img src="/assets/img/testimonials/client-1.png" alt="Client 1" class="author-photo" loading="lazy" width="120" height="120" />
+              <div class="author-details">
+                <h4 class="author-name">Corey Anderson</h4>
+                <p class="author-title">CEO</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote-icon"><i class="fas fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "Great eye for design and seamless execution. The new site is fast, beautiful, and user-friendly."
+            </p>
+            <div class="testimonial-author">
+              <img src="/assets/img/testimonials/client-2.png" alt="Client 2" class="author-photo" loading="lazy" width="120" height="120" />
+              <div class="author-details">
+                <h4 class="author-name">Derrick Dale</h4>
+                <p class="author-title">Managing Director</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="view-all-testimonials-cta">
+          <a href="/testimonials" class="cta-button secondary-cta">
+            <i class="fas fa-comments"></i> Read More Testimonials_
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section id="final-cta" class="final-cta-section section-padding">
+      <div class="container cta-container">
+        <div class="cta-content">
+          <h2 class="cta-headline glitch" data-text="Initiate_Collaboration?">// Initiate_Collaboration?</h2>
+          <p class="cta-subheadline">
+            Have a project in mind or just want to connect? My comms are open. Let's build something exceptional.
+          </p>
+          <div class="cta-buttons-wrapper">
+            <a href="/contact" class="cta-button primary-cta large-cta">
+              <i class="fas fa-paper-plane"></i> Send Transmission_
+            </a>
+          </div>
+        </div>
+        <div class="cta-background-elements" aria-hidden="true">
+          <span class="bg-element element-1"></span>
+          <span class="bg-element element-2"></span>
+          <span class="bg-element element-3"></span>
+          <span class="bg-element element-4"></span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer (included) -->
+  <div data-include="/partials/footer.html"></div>
+</body>
+</html>

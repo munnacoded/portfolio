@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Projects — Munna Coded | Front‑End Web Developer</title>
+  <meta name="description" content="Selected projects by Munna Coded — web experiences, UI/UX, and front‑end engineering. Explore case studies and live demos." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d0d1a" />
+  <meta name="author" content="Munna Coded" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://munnacoded.netlify.app/projects" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Munna Coded — Portfolio" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:title" content="Projects — Munna Coded | Front‑End Web Developer" />
+  <meta property="og:description" content="Selected projects by Munna Coded — web experiences, UI/UX, and front‑end engineering." />
+  <meta property="og:url" content="https://munnacoded.netlify.app/projects" />
+  <meta property="og:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+  <meta property="og:image:alt" content="Portrait of Munna Coded" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Projects — Munna Coded | Front‑End Web Developer" />
+  <meta name="twitter:description" content="Selected projects — web experiences, UI/UX, and front‑end engineering." />
+  <meta name="twitter:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0d0d1a" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/pages.css" />
+
+  <!-- JS -->
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/include-partials.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- Structured Data: CollectionPage + ItemList + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"CollectionPage",
+    "name":"Projects — Munna Coded",
+    "url":"https://munnacoded.netlify.app/projects",
+    "about":{
+      "@type":"Person",
+      "name":"Munna Coded",
+      "url":"https://munnacoded.netlify.app/"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ItemList",
+    "itemListElement":[
+      {
+        "@type":"ListItem","position":1,
+        "url":"https://munnacoded.netlify.app/projects/alokchhaya-high-school",
+        "name":"Alokchhaya High School — Responsive Informational Website"
+      },
+      {
+        "@type":"ListItem","position":2,
+        "url":"https://munnacoded.netlify.app/projects#project-slug-2",
+        "name":"Cyber_Dashboard // Data Visualization"
+      },
+      {
+        "@type":"ListItem","position":3,
+        "url":"https://munnacoded.netlify.app/projects#project-slug-3",
+        "name":"Portfolio_Matrix // Personal Website"
+      }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://munnacoded.netlify.app/"},
+      {"@type":"ListItem","position":2,"name":"Projects","item":"https://munnacoded.netlify.app/projects"}
+    ]
+  }
+  </script>
+    
+  <!-- HUD gate + avatar preload + preloader (single drop-in) -->
+  <style id="hud-gate-css">
+    /* Dark fallback to avoid white flash */
+    html.hud-gate, html.hud-gate body { background:#040b12; }
+    html.hud-gate body { overflow:hidden; }
+    /* Hide everything while gate is ON */
+    html.hud-gate body > * { visibility:hidden !important; }
+    /* But show the HUD immediately */
+    html.hud-gate body > #hud-preloader { visibility:visible !important; }
+  </style>
+  <script>
+    (function(){
+      try {
+        // Gate only on first visit in this tab
+        if (!sessionStorage.getItem('hudShown')) {
+          document.documentElement.classList.add('hud-gate');
+          // Failsafe: auto-open gate in case JS/preloader is delayed
+          setTimeout(function(){
+            try{
+              document.documentElement.classList.remove('hud-gate');
+              var s = document.getElementById('hud-gate-css');
+              if (s && s.parentNode) s.parentNode.removeChild(s);
+            }catch(_){}
+          }, 3500);
+        } else {
+          document.documentElement.classList.remove('hud-gate');
+        }
+      } catch(_) {}
+    })();
+  </script>
+  
+  <!-- Preload HUD avatar for instant display -->
+  <link rel="preload" as="image" href="/assets/img/avatar/munna-avatar.webp" fetchpriority="high">
+  
+  <!-- Preloader (cache-busted) -->
+  <script src="/assets/js/preloader.js?v=2" defer></script>
+  
+</head>
+
+<body class="dark-mode">
+  <!-- Header -->
+  <div data-include="/partials/header.html"></div>
+
+  <main id="page-content">
+    <!-- Hero -->
+    <section id="projects-hero" class="projects-hero-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="page-title glitch" data-text="Project_Archives">// Project_Archives</h1>
+          <p class="section-subtitle">A curated collection of my most significant projects. Each entry represents a unique challenge, a learning journey, and a step towards innovation.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Listing -->
+    <section id="all-projects-listing" class="all-projects-listing-section section-padding-sm">
+      <div class="container">
+        <!-- Filters (visible via JS when applicable) -->
+        <div class="project-filters" style="display:none;">
+          <button class="filter-btn active" data-filter="all">All_Projects</button>
+          <button class="filter-btn" data-filter="web-dev">Web_Development</button>
+          <button class="filter-btn" data-filter="ui-ux">UI/UX_Design</button>
+          <button class="filter-btn" data-filter="personal">Personal_Projects</button>
+        </div>
+
+        <div class="projects-showcase-grid">
+          <!-- Card 1 -->
+          <article id="project-slug-1" class="project-showcase-card" data-category="web-dev personal">
+            <div class="project-card-image-wrapper">
+              <img
+                src="/assets/img/projects/alokchhaya-high-school/cover.webp"
+                alt="Alokchhaya High School website thumbnail"
+                class="project-card-thumbnail"
+                loading="lazy"
+                width="1000" height="600"
+              />
+              <div class="project-card-overlay">
+                <a href="/projects/alokchhaya-high-school" class="overlay-action-button primary">
+                  <i class="fas fa-search-plus"></i> View_Case_Study_
+                </a>
+                <a href="https://alokchhaya-high-school.netlify.app/" target="_blank" rel="noopener noreferrer" class="overlay-action-button secondary">
+                  <i class="fas fa-external-link-alt"></i> Live_Demo_
+                </a>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-card-title">Alokchhaya High School — Responsive Informational Website</h3>
+              <p class="project-card-category">Category: Web Development, School</p>
+              <p class="project-card-short-desc">
+                Design and development of a responsive multi‑section website for a school, focused on clarity, content hierarchy and performance.
+              </p>
+              <div class="project-card-tech-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 (placeholder visuals) -->
+          <article id="project-slug-2" class="project-showcase-card" data-category="ui-ux web-dev">
+            <div class="project-card-image-wrapper">
+              <img
+                src="/assets/img/misc/Portfolio_Screenshot.png"
+                alt="Cyber Dashboard project thumbnail"
+                class="project-card-thumbnail"
+                loading="lazy"
+                width="1000" height="600"
+              />
+              <div class="project-card-overlay">
+                <a href="/projects#project-slug-2" class="overlay-action-button primary">
+                  <i class="fas fa-search-plus"></i> View_Case_Study_
+                </a>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-card-title">Cyber_Dashboard // Data Visualization</h3>
+              <p class="project-card-category">Category: UI/UX Design, Analytics</p>
+              <p class="project-card-short-desc">
+                Interactive dashboard for complex data visualization with a futuristic aesthetic and real‑time updates.
+              </p>
+              <div class="project-card-tech-stack">
+                <span>Vue.js</span><span>D3.js</span><span>Firebase</span><span>SCSS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article id="project-slug-3" class="project-showcase-card" data-category="personal web-dev">
+            <div class="project-card-image-wrapper">
+              <img
+                src="/assets/img/misc/Portfolio_Screenshot.png"
+                alt="Portfolio Matrix project thumbnail"
+                class="project-card-thumbnail"
+                loading="lazy"
+                width="1000" height="600"
+              />
+              <div class="project-card-overlay">
+                <a href="/projects#project-slug-3" class="overlay-action-button primary">
+                  <i class="fas fa-search-plus"></i> View_Case_Study_
+                </a>
+                <a href="/" class="overlay-action-button secondary">
+                  <i class="fas fa-external-link-alt"></i> Live_Site_
+                </a>
+              </div>
+            </div>
+            <div class="project-card-content">
+              <h3 class="project-card-title">Portfolio_Matrix // Personal Website</h3>
+              <p class="project-card-category">Category: Web Development, Personal Branding</p>
+              <p class="project-card-short-desc">
+                A dynamic personal portfolio with a cyberpunk‑inspired UI and smooth micro‑interactions.
+              </p>
+              <div class="project-card-tech-stack">
+                <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>GSAP</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/partials/footer.html"></div>
+</body>
+</html>

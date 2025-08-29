@@ -1,0 +1,103 @@
+/* =Theme tokens: colors for dark (default) and light modes.
+   Applied variables are consumed by base/components/pages CSS.
+   NOTE: Refactored only (no value changes).
+*/
+
+:root {
+  /* Scheme hint (lets UA render form controls appropriately) */
+  color-scheme: dark light;
+
+  /* Dark theme base (default) */
+  --bg-color-dark: #0d0d1a;
+  --bg-secondary-dark: #1a1a2e;
+  --text-color-dark: #c0c0ff;
+
+  --accent-color-primary-dark: #00f0ff;      /* Neon Cyan */
+  --accent-color-secondary-dark: #ff00ff;    /* Neon Magenta */
+  --accent-color-glow-dark: rgba(0, 240, 255, 0.45);
+
+  --border-color-dark: rgba(0, 240, 255, 0.28);
+  --header-bg-dark: rgba(13, 13, 26, 0.85);
+  --footer-bg-dark: #101020;
+
+  /* Light theme base */
+  --bg-color-light: #e8e8f5;
+  --bg-secondary-light: #ffffff;
+  --text-color-light: #1a1a2e;
+
+  --accent-color-primary-light: #7f00ff;     /* Purple */
+  --accent-color-secondary-light: #007bff;   /* Bright Blue */
+  --accent-color-glow-light: rgba(127, 0, 255, 0.40);
+
+  --border-color-light: rgba(127, 0, 255, 0.28);
+  --header-bg-light: rgba(232, 232, 245, 0.9);
+  --footer-bg-light: #dcdcf0;
+
+  /* RGB helpers (static) */
+  --bg-color-dark-rgb: 13, 13, 26;
+  --bg-color-light-rgb: 232, 232, 245;
+
+  --accent-color-primary-dark-rgb: 0, 240, 255;
+  --accent-color-secondary-dark-rgb: 255, 0, 255;
+
+  --accent-color-primary-light-rgb: 127, 0, 255;
+  --accent-color-secondary-light-rgb: 0, 123, 255;
+
+  --text-color-dark-rgb: 192, 192, 255;   /* #c0c0ff */
+  --text-color-light-rgb: 26, 26, 46;     /* #1a1a2e */
+
+  /* Applied tokens (default → dark) */
+  --bg-color: var(--bg-color-dark);
+  --bg-secondary: var(--bg-secondary-dark);
+  --text-color: var(--text-color-dark);
+
+  --accent-primary: var(--accent-color-primary-dark);
+  --accent-secondary: var(--accent-color-secondary-dark);
+  --accent-glow: var(--accent-color-glow-dark);
+
+  --accent-primary-rgb: var(--accent-color-primary-dark-rgb);
+  --accent-secondary-rgb: var(--accent-color-secondary-dark-rgb);
+
+  --border-color: var(--border-color-dark);
+  --header-bg: var(--header-bg-dark);
+  --footer-bg: var(--footer-bg-dark);
+
+  /* For progress bars or overlays that need a generic text rgb */
+  --text-color-rgb: var(--text-color-light-rgb); /* used for light-on-dark mixes */
+
+  /* Optional subtle elevation/shadows (dark defaults) */
+  --shadow-1: 0 5px 18px rgba(0, 0, 0, .12);
+  --shadow-2: 0 12px 28px rgba(0, 0, 0, .18);
+}
+
+/* =Light mode overrides */
+body.light-mode {
+  color-scheme: light;
+
+  /* Applied tokens */
+  --bg-color: var(--bg-color-light);
+  --bg-secondary: var(--bg-secondary-light);
+  --text-color: var(--text-color-light);
+
+  --accent-primary: var(--accent-color-primary-light);
+  --accent-secondary: var(--accent-color-secondary-light);
+  --accent-glow: var(--accent-color-glow-light);
+
+  --accent-primary-rgb: var(--accent-color-primary-light-rgb);
+  --accent-secondary-rgb: var(--accent-color-secondary-light-rgb);
+
+  --border-color: var(--border-color-light);
+  --header-bg: var(--header-bg-light);
+  --footer-bg: var(--footer-bg-light);
+
+  --text-color-rgb: var(--text-color-light-rgb);
+
+  /* Elevation/shadows (light variants) */
+  --shadow-1: 0 5px 18px rgba(0, 0, 0, .08);
+  --shadow-2: 0 12px 28px rgba(0, 0, 0, .12);
+}
+
+/* =Smooth theme transitions (kept performant) */
+html, body, #main-header, #main-footer {
+  transition: background-color .3s ease, color .3s ease, border-color .3s ease;
+}

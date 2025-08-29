@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Utility pages
+Disallow: /404.html
+
+# Sitemap (new domain)
+Sitemap: https://munnacoded.netlify.app/sitemap.xml

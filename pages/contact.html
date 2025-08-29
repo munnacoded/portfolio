@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="bn" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Contact — Munna Coded | Let’s Collaborate</title>
+  <meta name="description" content="Have a project in mind or a question? Contact Munna Coded — Front‑End Web Developer. Netlify form enabled with spam protection." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#0d0d1a" />
+  <meta name="author" content="Munna Coded" />
+
+  <!-- Canonical -->
+  <link rel="canonical" href="https://munnacoded.netlify.app/contact" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Munna Coded — Portfolio" />
+  <meta property="og:locale" content="bn_BD" />
+  <meta property="og:title" content="Contact — Munna Coded | Let’s Collaborate" />
+  <meta property="og:description" content="Have a project in mind or a question? Contact Munna Coded — Front‑End Web Developer." />
+  <meta property="og:url" content="https://munnacoded.netlify.app/contact" />
+  <meta property="og:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+  <meta property="og:image:alt" content="Portrait of Munna Coded" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact — Munna Coded | Let’s Collaborate" />
+  <meta name="twitter:description" content="Have a project in mind or a question? Contact Munna Coded — Front‑End Web Developer." />
+  <meta name="twitter:image" content="https://munnacoded.netlify.app/assets/img/avatar/Mohiuddin-Munna.jpeg" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+
+  <!-- Favicons -->
+  <link rel="icon" href="/assets/favicons/favicon.ico" sizes="any" />
+  <link rel="apple-touch-icon" href="/assets/favicons/apple-touch-icon.png" />
+  <link rel="manifest" href="/assets/favicons/site.webmanifest" />
+  <link rel="mask-icon" href="/assets/favicons/safari-pinned-tab.svg" color="#0d0d1a" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/assets/css/theme.css" />
+  <link rel="stylesheet" href="/assets/css/base.css" />
+  <link rel="stylesheet" href="/assets/css/components.css" />
+  <link rel="stylesheet" href="/assets/css/pages.css" />
+
+  <!-- JS -->
+  <script src="/assets/js/theme.js" defer></script>
+  <script src="/assets/js/include-partials.js" defer></script>
+  <script src="/assets/js/main.js" defer></script>
+
+  <!-- Structured Data: ContactPage + Breadcrumbs -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"ContactPage",
+    "name":"Contact — Munna Coded",
+    "url":"https://munnacoded.netlify.app/contact",
+    "about":{"@type":"Person","name":"Munna Coded","url":"https://munnacoded.netlify.app/"},
+    "mainEntityOfPage":"https://munnacoded.netlify.app/contact"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Home","item":"https://munnacoded.netlify.app/"},
+      {"@type":"ListItem","position":2,"name":"Contact","item":"https://munnacoded.netlify.app/contact"}
+    ]
+  }
+  </script>
+    
+  <!-- HUD gate + avatar preload + preloader (single drop-in) -->
+  <style id="hud-gate-css">
+    /* Dark fallback to avoid white flash */
+    html.hud-gate, html.hud-gate body { background:#040b12; }
+    html.hud-gate body { overflow:hidden; }
+    /* Hide everything while gate is ON */
+    html.hud-gate body > * { visibility:hidden !important; }
+    /* But show the HUD immediately */
+    html.hud-gate body > #hud-preloader { visibility:visible !important; }
+  </style>
+  <script>
+    (function(){
+      try {
+        if (!sessionStorage.getItem('hudShown')) {
+          document.documentElement.classList.add('hud-gate');
+          setTimeout(function(){
+            try{
+              document.documentElement.classList.remove('hud-gate');
+              var s = document.getElementById('hud-gate-css');
+              if (s && s.parentNode) s.parentNode.removeChild(s);
+            }catch(_){}
+          }, 3500);
+        } else {
+          document.documentElement.classList.remove('hud-gate');
+        }
+      } catch(_) {}
+    })();
+  </script>
+  
+  <!-- Preload HUD avatar for instant display -->
+  <link rel="preload" as="image" href="/assets/img/avatar/munna-avatar.webp" fetchpriority="high">
+  
+  <!-- Preloader (cache-busted) -->
+  <script src="/assets/js/preloader.js?v=2" defer></script>
+  
+</head>
+
+<body class="dark-mode">
+  <!-- Header -->
+  <div data-include="/partials/header.html"></div>
+
+  <main id="page-content">
+    <!-- Hero (unified style from pages.css) -->
+    <section id="contact-hero" class="contact-hero-section section-padding">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="page-title glitch" data-text="Establish_Link">// Establish_Link</h1>
+          <p class="section-subtitle">Ready to discuss your next project or just want to say hi? Use the form or the alternate channels below.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact details -->
+    <section id="contact-details" class="contact-details-section section-padding-sm">
+      <div class="container contact-grid">
+        <!-- Form -->
+        <div class="contact-form-wrapper">
+          <h2 class="contact-sub-title">// Direct_Transmission_Form</h2>
+
+          <!-- Netlify Forms enabled -->
+          <form
+            name="contact"
+            id="contactForm"
+            method="POST"
+            data-netlify="true"
+            netlify-honeypot="bot-field"
+            class="contact-form"
+            action="/thanks"
+          >
+            <!-- Required hidden input for Netlify -->
+            <input type="hidden" name="form-name" value="contact" />
+            <!-- Honeypot field -->
+            <input type="text" name="bot-field" class="hp-field" tabindex="-1" autocomplete="off" />
+
+            <div class="form-group">
+              <label for="name">Name_Identifier:</label>
+              <input type="text" id="name" name="name" placeholder="e.g., Jane_Doe_01" required />
+              <span class="form-line"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email_Address:</label>
+              <input type="email" id="email" name="email" placeholder="user@domain.matrix" required />
+              <span class="form-line"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject_Line:</label>
+              <input type="text" id="subject" name="subject" placeholder="Project_Inquiry // Collaboration_Proposal" required />
+              <span class="form-line"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message_Payload:</label>
+              <textarea id="message" name="message" rows="6" placeholder="Initiate your message here..." required></textarea>
+              <span class="form-line"></span>
+            </div>
+
+            <!-- Optional: reCAPTCHA v2 (enable from Netlify if needed) -->
+            <!-- <div data-netlify-recaptcha="true"></div> -->
+
+            <div class="form-group form-submit-group">
+              <button type="submit" id="submitBtn" class="cta-button primary-cta">
+                <i class="fas fa-satellite-dish icon-default" aria-hidden="true"></i>
+                <i class="fas fa-spinner fa-spin icon-loading" style="display:none;" aria-hidden="true"></i>
+                <span class="btn-text">Send_Signal_</span>
+              </button>
+              <p id="form-status" class="form-status-message" aria-live="assertive"></p>
+            </div>
+          </form>
+        </div>
+
+        <!-- Info -->
+        <div class="contact-info-wrapper">
+          <h2 class="contact-sub-title">// Alternate_Channels</h2>
+
+          <div class="contact-info-item">
+            <i class="fas fa-envelope-open-text icon" aria-hidden="true"></i>
+            <div class="info-text">
+              <h4>Email_Relay:</h4>
+              <p><a href="mailto:munnacoded@gmail.com">munnacoded@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-phone-alt icon" aria-hidden="true"></i>
+            <div class="info-text">
+              <h4>Voice_Link: (Optional)</h4>
+              <p><a href="tel:+1234567890">+1&nbsp;234&nbsp;567&nbsp;890</a></p>
+            </div>
+          </div>
+
+          <div class="contact-info-item">
+            <i class="fas fa-map-marker-alt icon" aria-hidden="true"></i>
+            <div class="info-text">
+              <h4>Base_Location:</h4>
+              <p>Sector 7, CyberDistrict, Neo‑City</p>
+            </div>
+          </div>
+
+          <h3 class="social-connect-title">// Network_Links:</h3>
+          <div class="contact-social-links">
+            <!-- TODO: Replace USERNAME with your actual handles -->
+            <a href="https://github.com/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-link github"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-link linkedin"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Twitter/X" class="social-icon-link twitter"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://dribbble.com/USERNAME" target="_blank" rel="noopener noreferrer" aria-label="Dribbble" class="social-icon-link dribbble"><i class="fab fa-dribbble"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <div data-include="/partials/footer.html"></div>
+</body>
+</html>
