@@ -1,5 +1,5 @@
-# Thank-you route: serve the file on GET after form redirect
-/thanks                               /pages/thanks.html                              200
+# Thank-you: convert POST → GET and show the static file
+/thanks                               /pages/thanks.html                              303
 
 # Pretty URLs → file paths (200)
 /about                                /pages/about.html                                200
@@ -17,4 +17,4 @@
 /pages/skills.html                    /skills                                         301
 /pages/testimonials.html              /testimonials                                   301
 /pages/contact.html                   /contact                                        301
-# (Intentionally no 301 for /pages/thanks.html to avoid loops)
+# (no 301 for /pages/thanks.html → avoid loop)
