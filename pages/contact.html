@@ -132,7 +132,7 @@
         <div class="contact-form-wrapper">
           <h2 class="contact-sub-title">// Direct_Transmission_Form</h2>
 
-          <!-- Netlify Forms enabled -->
+          <!-- Test mode: disable JS AJAX so Netlify receives POST -->
           <form
             name="contact"
             id="contactForm"
@@ -141,6 +141,7 @@
             netlify-honeypot="bot-field"
             class="contact-form"
             action="/thanks"
+            data-ajax="off"
           >
             <!-- Required hidden input for Netlify -->
             <input type="hidden" name="form-name" value="contact" />
