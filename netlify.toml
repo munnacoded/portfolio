@@ -1,4 +1,4 @@
-# netlify.toml — Clean URLs, caching, security headers
+# netlify.toml — Munna Coded
 
 [build]
   publish = "."
@@ -17,6 +17,11 @@
   status = 200
 
 [[redirects]]
+  from = "/projects/alokchhaya-high-school"
+  to   = "/pages/projects/alokchhaya-high-school.html"
+  status = 200
+
+[[redirects]]
   from = "/skills"
   to   = "/pages/skills.html"
   status = 200
@@ -29,11 +34,6 @@
 [[redirects]]
   from = "/contact"
   to   = "/pages/contact.html"
-  status = 200
-
-[[redirects]]
-  from = "/projects/alokchhaya-high-school"
-  to   = "/pages/projects/alokchhaya-high-school.html"
   status = 200
 
 [[redirects]]
@@ -61,6 +61,11 @@
   status = 301
 
 [[redirects]]
+  from = "/pages/projects/alokchhaya-high-school.html"
+  to   = "/projects/alokchhaya-high-school"
+  status = 301
+
+[[redirects]]
   from = "/pages/skills.html"
   to   = "/skills"
   status = 301
@@ -73,11 +78,6 @@
 [[redirects]]
   from = "/pages/contact.html"
   to   = "/contact"
-  status = 301
-
-[[redirects]]
-  from = "/pages/projects/alokchhaya-high-school.html"
-  to   = "/projects/alokchhaya-high-school"
   status = 301
 
 [[redirects]]
@@ -94,7 +94,7 @@
   status = 404
 
 # ----------------
-# Global headers
+# Global security headers
 # ----------------
 [[headers]]
   for = "/*"
@@ -137,7 +137,31 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# Optional CSP (enable only after whitelisting all external CDNs)
+# sitemap.xml/robots.txt content-type + caching
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
+    Cache-Control = "public, max-age=86400"
+
+# Thanks page: ensure noindex via header (meta already set)
+[[headers]]
+  for = "/thanks"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
+[[headers]]
+  for = "/pages/thanks.html"
+  [headers.values]
+    X-Robots-Tag = "noindex, follow"
+
+# Optional CSP (enable only after whitelisting external CDNs)
 # [[headers]]
 #   for = "/*"
 #   [headers.values]
