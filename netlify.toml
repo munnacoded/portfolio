@@ -94,7 +94,7 @@
   status = 404
 
 # ----------------
-# Global security headers
+# Security headers
 # ----------------
 [[headers]]
   for = "/*"
@@ -137,11 +137,17 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
-# sitemap.xml/robots.txt content-type + caching
+# sitemap/robots content-type + caching
 [[headers]]
   for = "/sitemap.xml"
   [headers.values]
     Content-Type = "application/xml; charset=utf-8"
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/sitemap.txt"
+  [headers.values]
+    Content-Type = "text/plain; charset=utf-8"
     Cache-Control = "public, max-age=0, must-revalidate"
 
 [[headers]]

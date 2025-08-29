@@ -4,5 +4,6 @@ Allow: /
 # Utility pages
 Disallow: /404.html
 
-# Sitemap (new domain)
+# Sitemaps (Google যেকোনো এক/দুটো থেকেই পড়বে)
 Sitemap: https://munnacoded.netlify.app/sitemap.xml
+Sitemap: https://munnacoded.netlify.app/sitemap.txt
