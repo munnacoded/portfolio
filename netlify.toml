@@ -85,13 +85,6 @@
   to   = "/thanks"
   status = 301
 
-# -------------
-# 404 fallback
-# -------------
-[[redirects]]
-  from = "/*"
-  to   = "/404.html"
-  status = 404
 
 # ----------------
 # Security headers

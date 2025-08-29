@@ -17,5 +17,4 @@
 /pages/contact.html                  /contact                                       301
 /pages/thanks.html                   /thanks                                        301
 
-# 404 fallback (optional; 404.html in root already works)
-/*                                   /404.html                                      404
+# 404 fallback (optional; 404.html in root already works)                                404
